@@ -18,7 +18,7 @@ app.use(routes);
 
 // Connect to the Mongo DB
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb+srv://kaitlinkenney:password123!@cluster0.wxtar.mongodb.net/readinglist?retryWrites=true&w=majority',
+  process.env.MONGODB_URI || 'mongodb://localhost/readinglist',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
